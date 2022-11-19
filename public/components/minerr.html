@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minnerr</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: #000000;
+            top: 0;
+            left: 0;
+
+        }
+
+        .navTotal {
+            border-bottom: 1px solid #FFFFFF;
+            box-shadow: 0 .125rem .25rem rgba(237, 225, 225, 0.075) !important;
+        }
+
+        .navBorder {
+
+            border-right: 1px solid #FFFFFF;
+            padding-right: 40px;
+        }
+
+        .bg-company-light {
+            background-color: #000000;
+        }
+
+        .main {
+            margin-top: 2rem;
+            color: #FFFFFF;
+        }
+
+        .main h1 {
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        .para {
+            width: 85vw;
+
+            text-align: justify;
+
+        }
+      
+        .mainMap {
+            margin: 4rem 0;
+        }
+
+        #map {
+            display: block;
+            margin: auto;
+            width: 600px;
+            /* height: 500px; */
+        }
+        .icon{
+            width: 60px;
+            height: 50px;
+            padding: 0;
+        }
+        .icon img{
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+
+            height: 50px;
+
+            box-shadow: .125rem 0 0.5rem rgba(0, 0, 0, .075) !important;
+        }
+
+        footer p {
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 0;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-company-light navTotal">
+        <div class="container-fluid">
+          <a class="navbar-brand navBorder icon" href="#"><img src="../images/logo.png" alt="" srcset=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse dropdown" id="navbarNav">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item"><h3>|</h3> -->
+                </li>
+              <li class="nav-item">
+                <a class="nav-link  px-4" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active  px-4" aria-current="page" href="#">Visualization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link   px-4" aria-current="page" href="/pages/lead-zinc-report.html" target="_blank">Lead-Zinc Ore Report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link   px-4" aria-current="page"  href="/pages/iron-report.html" target="_blank">Iron Ore Report</a>
+              </li>
+              
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="main">
+            <h1>Mineral Mapping In India</h1>
+            <p class="para">Humans have been altering the physical environment for thousands of years, whether it be
+                through clearing land for agriculture, damming streams to divert water, or mining to extract minerals.
+                The development of individual human beings, regions, and civilizations relies on various multifarious
+                resources, including mining. Mining is a resource and equipment-intensive industry at the same time. It
+                is stated that India is endowed with influential mineral resources. It spawns 89 minerals, of which 4
+                are Fuel Minerals, 11 Metallics, 52 Non-Metallic, and 22 Minor Minerals. Since these resources are such
+                a large part of our daily lives, managing them becomes essential. Despite traditional means, the process
+                of seeking minerals is still not instantaneous. There is a lot of difficulty in finding economically
+                viable mineral reserves.
+                <br> <br>
+                The iterative process of accumulating various datasets, followed by geological interpretation, takes a
+                long period during exploration. Massive volumes of data are gathered and analyzed, frequently with no
+                notable mineral discoveries. As a result, this analysis provides novel tactics and processes that will
+                tremendously increase finding rates and shorten the exploration life cycle.
+            <p>
+
+
+        </div>
+        <div class="mainMap ">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Made With ❤ Code O Holics </p>
+    </footer>
+
+
+    <script src="../js/mapdata.js"></script>
+    <script src="../js/libs/countrymap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
